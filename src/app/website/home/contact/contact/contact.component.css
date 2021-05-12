@@ -1,0 +1,92 @@
+.contactbanner{
+    background-image: url('../../../../../assets/images/bd1 (1).jpg');
+    height:190vh;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.sec{
+ height:25%;
+ padding-top: 60px;
+}
+.sec2{
+    background:whitesmoke;
+    height:15%;
+    padding-top: 50px;
+}
+.phn{
+    text-align: center;
+    
+}
+.fa{
+    font-size: 50px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.fdbk{
+    background:whitesmoke;
+    padding-top: 100px;
+    height: 60%;
+    
+}
+.map{
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+
+.foot {
+  border-radius: 50px;
+  padding: 20px;
+
+}
+.md-form{
+  background-color: rgb(255, 255, 255);
+}
+
+.button{
+  color: blueviolet;
+
+}
+.form-control{
+ border-radius: 20px;
+}
+label{
+ padding-left: 15px;
+}
+.btn{
+  margin-left:100px;
+  display:block;
+  padding:10px;
+  border-radius: 20px;
+  width:300px;
+  cursor:pointer;
+}
+.frm{
+
+  box-shadow: 0 0 15px  black;
+  border-radius: 20px;
+  padding:30px ;
+  width:200;
+  height:100%;
+ 
+}
+span{
+  font-size: larger;
+}
+.frm{
+    background-image: url('../../../../../assets/images/login.jpg');
+    
+}
+label{
+    color: whitesmoke;
+}
+h4{
+    color: whitesmoke;
+}

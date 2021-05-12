@@ -1,0 +1,75 @@
+<div class="container-fluid first">
+    <div class="row">
+        <div class="col-md-6 social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-0.5x"></i> Itzz Johnny
+                here</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a
+                href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"><i
+                    class="fas fa-envelope"></i> johnnyvanapalli74@gmail.com</a>
+
+        </div>
+        <div class="col-md-6 social-links">
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<nav class="navbar  navbar-expand-md navbar-dark  bg-dark sticky-top">
+
+
+    <div class="container start">
+        <a class="navbar-brand" href="#"><img src="../../../assets/images/logo3.png" alt="logo"
+                style="width:150px; height:50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav pull-right">
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/services']"
+                        routerLinkActive="router-link-active">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/course']" routerLinkActive="router-link-active">Courses
+                        Offered</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/aboutus']"
+                        routerLinkActive="router-link-active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact
+                        Us</a>
+                </li>
+            </ul>&nbsp;
+        </div>
+        <div class="search-box justify-content-left">
+            <input class="search-text" type="text" placeholder="search...">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+    <button type="button" class="btn btn-primary"><a [routerLink]="['/login']" routerLinkActive="router-link-active"
+            style="color: white; text-decoration: none;">Login</a> </button>&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-danger"><a [routerLink]="['/signup']" routerLinkActive="router-link-active"
+            style="color: white; text-decoration: none;">Sign-Up</a> </button>
+</nav>

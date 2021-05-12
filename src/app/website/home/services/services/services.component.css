@@ -1,0 +1,54 @@
+
+.servicebanner{
+  background-image: url('../../../../../assets/images/bd(1).jpg');
+  height:35vh;
+  background-image: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.sec{
+height:25%;
+padding-top: 60px;
+}
+
+
+
+
+
+.coll{
+    height: 40vh;
+    background-color:black;
+  }
+  .botn{
+    text-align: center;
+    padding-top: 60px;
+  }
+  #bton a{
+   margin-right: 60px;
+   border-width: 4px;
+  }
+  .para{
+   justify-content: center;
+   align-items: center;
+   padding-top: 50px;
+  }
+
+
+
+
+  i{
+    color:#008ed6;
+     font-size: 45px;
+     
+  }
+  .icons{
+    text-align: center;
+  }
+  .onebox{
+    height:330px
+  }
+  .para{
+font-size: 25px;
+
+  }

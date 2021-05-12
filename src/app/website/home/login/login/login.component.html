@@ -1,0 +1,69 @@
+<div class="loginbanner">
+    <div class="container lgnfrm">
+        <div class="col-md-12">
+            <div class="loginform">
+                <h3>Login Form</h3>
+                <form [formGroup]="loginform" (ngSubmit)="onsubmit()">
+                    <div>
+                        <label for="name" style="color: white;">Username:</label><br>
+
+                        <input type="text" placeholder="Enter user name" class="form-control" formControlName="name"
+                            required [ngClass]="{'is-invalid':f.name.invalid && f.name.touched}">
+                        <div *ngIf="submitted && f.name.errors">
+                            <div *ngIf="f.name.errors.required" style="color: red;">
+                                Name is Required
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="pasword" style="color: white;">Password:</label><br>
+                        <input type="password" placeholder="Enter password" id="password"
+                            [ngClass]="{'is-invalid': f.password.invalid && f.password.touched}" class="form-control"
+                            formControlName="password" required>
+                        <div *ngIf="submitted && f.password.errors">
+                            <div *ngIf="f.password.errors.required" style="color:red">
+                                password is Required
+
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div>
+                        <p style="color: white;"><span class="eye" onclick="eyefunction()">
+                                <i class="fa fa-eye" id="hide1"></i>
+                                <i class="fa fa-eye-slash" id="hide2"></i>
+                            </span> Show Password </p>
+                    </div>
+
+
+                    <div class="registeranchor">
+                        <input type="submit" value="submit" class="btn btn-primary">
+
+                        <div class="forgot">
+                            <a href="#" style="color:whitesmoke; ">forgot password?</a>
+                        </div><br>
+
+                        <p>Don't have account? <a [routerLink]="['/signup']" routerLinkActive="router-link-active">Sign
+                                up</a></p>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+
+
+</div>

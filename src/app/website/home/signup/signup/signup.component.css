@@ -1,0 +1,76 @@
+.card{
+    background:transparent;
+}
+.form-control{
+    border-radius: 20px;
+}
+.card-header{
+    background:white;
+    border-radius: 20px;
+
+}
+label{
+    color: whitesmoke;
+}
+p{
+    color: whitesmoke;
+}
+.frm .btn{
+    margin-left:100px;
+    display:block;
+    padding:10px;
+    border-radius: 20px;
+    width:300px;
+    cursor:pointer;
+}
+
+.signupbanner{
+    background-image: url('../../../../../assets/images/bd1 (3).jpg');
+    height:210vh;
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+ 
+}
+p{
+    text-align: center;
+ 
+}
+.cnct{
+  
+    border-radius: 30px;
+}
+.btn{
+    text-align: center;
+   
+}
+
+.contactmatter{
+    padding-top: 50px;
+}
+i{
+    color: whitesmoke;
+    margin-left: 10px;
+  
+
+}
+.gap{
+    height:1px;
+    background-color: whitesmoke;
+ 
+  
+    
+}
+.iconss{
+    text-align: center;
+}
+a :hover{
+    outline-color: darkturquoise;
+    color: blue;
+}

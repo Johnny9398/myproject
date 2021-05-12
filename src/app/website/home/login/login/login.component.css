@@ -1,0 +1,61 @@
+.loginbanner{
+  
+        background-image: url('../../../../../assets/images/bd1 (2).jpg');
+        height:100vh;
+        background-image: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+    
+   
+}
+.lgnfrm{
+    width:500px;
+    padding-top: 100px;
+    
+}
+.loginform{
+  
+    box-shadow: 0 0 15px  lawngreen;
+    border-radius: 15px;
+    padding:30px;
+}
+
+.form-control{
+    border-radius: 20px;
+   
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+.fa{
+    color: white;
+
+}
+#hide1{
+    display:none;
+}
+.btn{
+    margin:40px auto 20px;
+    display:block;
+    padding:10px;
+    border-radius: 20px;
+    width:300px;
+    cursor:pointer;
+   
+}
+p{
+    color: white;
+   
+  
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+
+.forgot p{
+    text-align: center;
+}

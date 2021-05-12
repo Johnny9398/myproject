@@ -1,0 +1,228 @@
+<div class="contactbanner">
+    <section class="sec">
+        <div class="col-md-12">
+
+            <h1 style="color: white; text-align: center;" id="para">COURSES</h1><br>
+
+
+
+        </div>
+    </section>
+</div>
+
+<h1>(courses is called by apiurl(services) )</h1>
+
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-8 courses">
+
+
+            <table class="table table-bordered">
+                <tr>
+                    <th style="font-size: x-large;" colspan="2"><b>Courses</b></th>
+                </tr>
+
+                <tr *ngFor="let item of coursedets ">
+
+                    <td>{{item.skillDescription}}</td>
+                    <td>
+                        <button type=" button" class="btn btn-link " (click)="LoadTopics(item.skillId)">See
+                            Topics</button>
+                    </td>
+
+
+
+
+                </tr>
+            </table>
+
+
+            <table class="table table-bordered" *ngIf="topics.length>0">
+                <tr>
+                    <th>s.no</th>
+                    <th>Topic Name</th>
+                    <th>No.of videos</th>
+                    <th>No.of Questions</th>
+                </tr>
+                <tr *ngFor="let items of topics let i=index ">
+                    <td align="center">{{i+1}}</td>
+                    <td>{{items.topicName}}</td>
+                    <td align="center">{{items.noOfVideos}}</td>
+                    <td align="center">{{items.noOfQuestions}}</td>
+                </tr>
+
+            </table>
+
+
+
+            <!-- <div class="bs-example">
+                <div class="accordion" id="accordionExample">
+
+                    <div class="card">
+
+                        <div class="card-header" id="headingOne" style="background-color:#68b6ed; ">
+                            <h2 style="text-align: center; color: black;  ">
+                                <b>Courses</b>
+                            </h2>
+                        </div>
+
+
+                        <div class="card mb-500" *ngFor="let items of coursedets">
+
+                            <div class="card-header" id="headingOne">
+                                <h4>{{items.skillDescription}}
+
+                                </h4>
+                                <button type=" button" class="btn btn-link " data-toggle="collapse"
+                                    data-target="#collapseOne">See
+                                    Topics</button>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body" style="text-align: center;">
+                                    <p>Problem-Solving skills helps to estimate the analytical and reasoning skills of a
+                                        person. These skills are generally categorized as aptitude and reasoning tests
+                                        by various hiring companies. The outcome of an aptitude test helps us understand
+                                        the learning potential of an aspirant. </p>
+                                    <div class="tab">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <th>skill Id</th>
+                                                <th style="text-align: left;">skill name</th>
+                                                <th>no. of Assessments</th>
+                                                <th>Topics</th>
+
+                                            </tr>
+                                            <tr *ngFor="let item of coursedets ">
+                                                <td align="center">{{item.skillId}}</td>
+                                                <td>{{item.skillDescription}}</td>
+                                                <td align="center">{{item.noOfAssessments}}</td>
+
+
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <br>
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h4>English & Verbal <button type=" button" class="btn btn-link " data-toggle="collapse"
+                                        data-target="#collapseTwo">See Topics</button></h4>
+                            </div>
+                            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and
+                                        easier web development. It is a collection of CSS and HTML conventions. <a
+                                            href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/"
+                                            target="_blank">Learn more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h4>Presentation & Interview<button type=" button" class="btn btn-link "
+                                        data-toggle="collapse" data-target="#collapseThree"
+                                        style="margin-left: 420px;">See
+                                        Topics</button></h4>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style
+                                        properties for a given HTML element such as colors, backgrounds, fonts etc. <a
+                                            href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn
+                                            more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card ">
+                            <div class="card-header" id="headingThree">
+                                <h4>coding of C & Data structures<button type=" button" class="btn btn-link "
+                                        data-toggle="collapse" data-target="#collapseFour"
+                                        style="margin-left: 370px;">See
+                                        Topics</button></h4>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body ">
+                                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style
+                                        properties for a given HTML element such as colors, backgrounds, fonts etc. <a
+                                            href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn
+                                            more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h4>coding With Java<button type=" button" class="btn btn-link " data-toggle="collapse"
+                                        data-target="#collapseFive">See Topics</button></h4>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style
+                                        properties for a given HTML element such as colors, backgrounds, fonts etc. <a
+                                            href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn
+                                            more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>  -->
+        </div>
+
+        <div class="col-md-4 images ">
+            <img src="../../../../assets/images/angular_01.png" class="card-img-top" alt="..." /><br><br>
+            <img src="../../../../assets/images/web image.png" class="card-img-top" alt="..." /><br><br>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- <table border="1" cellpadding="5" cellspacing="0" *ngIf="coursedets.length>0">
+                <tr>
+                    <th>skill Id</th>
+                    <th>skill name</th>
+                    <th>no. of Assessments</th>
+                    <th>Topics</th>
+
+                </tr>
+                <tr *ngFor="let item of coursedets ">
+                    <td align="center">{{item.skillId}}</td>
+                    <td>{{item.skillDescription}}</td>
+                    <td align="center">{{item.noOfAssessments}}</td>
+
+
+                </tr>
+            </table> -->
